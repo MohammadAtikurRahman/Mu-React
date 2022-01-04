@@ -1,4 +1,4 @@
-###React Mu Project
+## React Mu Project
 
 **npm install** to install dependencies before starting the app.
 
