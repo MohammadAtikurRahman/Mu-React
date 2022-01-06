@@ -11,9 +11,29 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import AcUnitOutlinedIcon from '@mui/icons-material/AcUnitOutlined';
 
 
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+  btn: {
+    background: 'violet',
+     fontSize: 40 ,
+     '&:hover': {
+       backgroundColor: 'greenyellow'
+     }
+   
+  },
+  title: {
+
+      textDecoration: 'underline',
+      marginBottom: 20
 
 
+  }
+});
 export default function Create() {
+
+  const classes = useStyles()
+
   return (
     <Container>
 
@@ -28,6 +48,8 @@ export default function Create() {
 
        </Typography>
         <Typography 
+
+       className={classes.title}
        variant="h2" 
        color="secondary"
        align = "center"
@@ -53,7 +75,12 @@ export default function Create() {
 
        </Typography>
 
-        <Button variant="contained">
+        <Button 
+
+        className = {classes.btn}
+        
+        
+        variant="contained">
 
            Default
         </Button>
@@ -144,7 +171,20 @@ export default function Create() {
 
        </Button>
    
-   
+         <Button 
+
+        
+         variant="contained" 
+         color="info"
+         
+         
+         >
+
+
+           CustomCSS 
+
+
+         </Button>
    
 
     </Container>
