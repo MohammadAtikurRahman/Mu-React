@@ -87,7 +87,7 @@ export default function Create() {
          
          <Button variant="contained" color="secondary" >
 
-          Primary
+          Seceondary
 
          </Button>
          <Button variant="contained" disabled >  
