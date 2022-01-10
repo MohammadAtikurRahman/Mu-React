@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Notes from './pages/Notes'
 import Create from './pages/Create'
+import Textfield from './pages/Textfield'
 
 import { createTheme , ThemeProvider }  from '@mui/material/styles'
 import { purple } from '@mui/material/colors'
@@ -48,6 +49,12 @@ function App() {
         <Route path="/create">
           <Create />
         </Route>
+           <Route path="/textfield" >
+
+              <Textfield/>
+           </Route>
+
+
       </Switch>
     </Router>
 
